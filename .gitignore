@@ -1,0 +1,11 @@
+.idea
+node_modules
+**/*.js
+!prettier.config.js
+!.eslintrc.js
+
+yarn-error.log
+.env
+
+.DS_Store
+.husky
