@@ -8,7 +8,7 @@ const commands: Command[] = [];
 
 const guildCommandsRoute = Routes.applicationGuildCommands(
   process.env.CLIENT_ID,
-  process.env.TEST_SERVER_ID
+  process.env.TEST_SERVER_ID,
 );
 
 const commandsRoute = Routes.applicationCommands(process.env.CLIENT_ID);
@@ -21,6 +21,6 @@ rest
   .catch((err) =>
     logtail.error(
       "Error registering application commands.",
-      JSON.parse(JSON.stringify(err))
-    )
+      JSON.parse(JSON.stringify(err)),
+    ),
   );
